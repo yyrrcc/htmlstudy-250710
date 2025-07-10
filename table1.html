@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TABLE</title>
+  </head>
+  <body>
+    <div>
+      <table border="1px" cellspacing="0">
+        <caption>
+          표 만들기
+        </caption>
+        <tr>
+          <td>0,0</td>
+          <td>0,1</td>
+          <td>0,2</td>
+        </tr>
+        <tr>
+          <td>1,1</td>
+          <td>1,2</td>
+          <td>1,3</td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <table border="1px">
+        <caption>
+          수업시간표
+        </caption>
+        <thead>
+          <tr>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>국어</td>
+            <td>과학</td>
+            <td colspan="3">수학</td>
+            <!-- 가로 / 행?????????? 합치기 -->
+            <!-- <td>사회</td> -->
+            <!-- <td>음악</td> -->
+          </tr>
+          <tr>
+            <td rowspan="2">영어</td>
+            <!-- 세로 / 열?????? 합치기, 본인 셀 포함해서 숫자 입력, 병합된 셀은 주석 또는 삭제 처리  -->
+            <td>사회</td>
+            <td>음악</td>
+            <td>사회</td>
+            <td>음악</td>
+          </tr>
+          <tr>
+            <!-- <td>수학</td> -->
+            <td>국어</td>
+            <td>사회</td>
+            <td>음악</td>
+            <td>과학</td>
+          </tr>
+          <tr>
+            <td>사회</td>
+            <td>수학</td>
+            <td>국어</td>
+            <td>수학</td>
+            <td>사회</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

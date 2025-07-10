@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form02</title>
+  </head>
+  <body>
+    <h1>회원가입 양식</h1>
+    <form action="">
+      <label for="name">거주지 : <input type="text" value="서울" readonly /> </label>
+      서울 사람만 가입이 가능합니다<br />
+      <label for="memberId">아이디 : <input type="text" id="memberId" name="memberId" autofocus required /> </label
+      ><br />
+      <label for="memberPw">
+        비밀번호 :
+        <input type="password" id="memberPw" name="memberPw" placeholder="10자리 이상 입력하세요" /> </label
+      ><br />
+      <label for="email"
+        >이메일 : <input type="text" id="email1" name="email1" size="10" />@
+        <select name="email2" id="email2">
+          <option value="naver.com">naver.com</option>
+          <option value="google.com" selected>google.com</option>
+          <option value="daum.net">daum.net</option>
+        </select> </label
+      ><br />
+      <label for="nationality">국적 : <input type="text" id="nationality" name="nationality" value="대한민국" /> </label
+      ><br />
+      <label for="memo">메모 : <textarea name="memo" id="memo" rows="10" cols="40"></textarea></label><br />
+      <label for="">추가양식 : <input type="hidden" id="addinfo" name="addinfo" /> </label><br />
+      <input type="submit" value="로그인" />
+      <input type="reset" value="초기화" />
+    </form>
+  </body>
+</html>
